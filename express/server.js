@@ -14,30 +14,30 @@ const schema = require('./schema');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json({
-    'hello': 'not!'
-  });
-});
+// router.get('/', (req, res) => {
+//   res.json({
+//     'hello': 'not!'
+//   });
+// });
 
 // test
-router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
+//router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 
-router.get('/test', (req, res) => res.json({ 'poop': 'change' }));
+//router.get('/test', (req, res) => res.json({ 'poop': 'change' }));
 
-router.post('/', (req, res) => res.json({ postBody: req.body }));
+//router.post('/', (req, res) => res.json({ postBody: req.body }));
 
 // router.post('/graph', (req, res) => graphqlHTTP({ graphiql: true, schema: schema }));
 
-router.get('/poop', (req, res) => ( res.json({ 'test': 'test2' })));
+//router.get('/poop', (req, res) => ( res.json({ 'test': 'test2' })));
 
 
 app.use(bodyParser.json());
 
-app.use('/.netlify/functions/server', router);  // path must route to lambda
+//app.use('/.netlify/functions/server', router);  // path must route to lambda
 
 /** GraphQL. I want to use a path here but I dont know how to make it work. */
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
   graphiql: true,
   schema: schema,
 }));
