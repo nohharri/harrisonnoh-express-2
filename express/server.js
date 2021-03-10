@@ -31,6 +31,12 @@ app.use('/graphql', graphqlHTTP({
   schema: schema,
 }))
 
+// router.get('/graphql', (req, res) =>
+//   graphqlHTTP({
+//     graphiql: true,
+//     schema: schema,
+// }));
+
 router.post('/', (req, res) => res.json({ postBody: req.body }));
 
 app.use(bodyParser.json());
