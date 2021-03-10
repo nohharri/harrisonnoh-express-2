@@ -9,7 +9,7 @@ const {
 const trips = require('./data/trips');
 
  /**
-  * Type that represents the latest type.
+  * Type that represents the latest trip.
   */
  const LatestTripType = new GraphQLObjectType({
      name: 'Trip',
