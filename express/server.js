@@ -25,23 +25,18 @@ router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 
 router.get('/test', (req, res) => res.json({ 'poop': 'change' }));
 
+router.post('/', (req, res) => res.json({ postBody: req.body }));
+
+app.use(bodyParser.json());
+
+//app.use('/.netlify/functions/server', router);  // path must route to lambda
+//app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
+
 /** GraphQL */
 app.use('/graphql', graphqlHTTP({
   graphiql: true,
   schema: schema,
-}))
-
-// router.get('/graphql', (req, res) =>
-//   graphqlHTTP({
-//     graphiql: true,
-//     schema: schema,
-// }));
-
-router.post('/', (req, res) => res.json({ postBody: req.body }));
-
-app.use(bodyParser.json());
-app.use('/.netlify/functions/server', router);  // path must route to lambda
-app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
+}));
 
 module.exports = app;
 module.exports.handler = serverless(app);
