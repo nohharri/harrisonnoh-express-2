@@ -10,10 +10,9 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 const { graphqlHTTP } = require('express-graphql');
-//const schema = require('./schema');
+const schema = require('./schema');
 
 const router = express.Router();
-
 
 router.get('/', (req, res) => {
   res.json({
@@ -26,10 +25,11 @@ router.get('/another', (req, res) => res.json({ route: req.originalUrl }));
 
 router.get('/test', (req, res) => res.json({ 'poop': 'change' }));
 
-router.get('/graphql', graphqlHTTP({ 
-  schema: schema,
+/** GraphQL */
+app.use('/graphql', graphqlHTTP({
   graphiql: true,
-}));
+  schema: schema,
+}))
 
 router.post('/', (req, res) => res.json({ postBody: req.body }));
 
