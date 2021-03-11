@@ -4,7 +4,7 @@ const trips = [
         id: 0, 
         location: 'Chicago, IL', 
         dateStart: '2021-03-12', 
-        dateEnd: '2019-03-13',
+        dateEnd: '2021-03-13',
     }
 ];
 
