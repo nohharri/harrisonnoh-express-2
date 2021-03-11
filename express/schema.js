@@ -39,7 +39,7 @@ const itinerary = require('./data/itinerary');
      name: 'Query',
      description: 'Root Query',
      fields: () => ({
-        poop: {
+        latestTrip: {
             type: new GraphQLNonNull(LatestTripType),
             description: 'The latest trip to display.',
             resolve: () => { 
