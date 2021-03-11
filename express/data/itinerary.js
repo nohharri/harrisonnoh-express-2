@@ -12,7 +12,7 @@ const itineraries = [
         tripId: 0,
         order: 1, 
         description: "Thirty minutes before arriving, we should buy pizza/drinks. If we don't arrive on time, we will have to look around for anything that is still open. Arrive at Hotel Audrey 🏨. Check-out is the next day at noon 🌅. We have two rooms.",
-        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.",
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.854391342411!2d-87.62495504864886!3d41.89598847217102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd354ba5e243f%3A0x329cff818ceade0b!2sHotel%20Audrey!5e0!3m2!1sen!2sus!4v1615427092937!5m2!1sen!2sus",
     },
     { 
         id: 2,
