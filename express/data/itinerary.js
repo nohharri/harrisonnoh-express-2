@@ -18,7 +18,7 @@ const itineraries = [
         id: 2,
         tripId: 0,
         order: 2, 
-        description: "We will be grabbing hotpot at 12pm Saturday. Hotpot is a popular East Asian cuisine where meats and vegetables are eaten around a hot soup. Vegetarian friendly. I made a reservation for 12pm.",
+        description: "We will be grabbing hotpot at 12pm Saturday. Hotpot is a popular East Asian cuisine where meats and vegetables are eaten inside a hot soup. Vegetarian friendly. I made a reservation for 12pm.",
         map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25277.77317799594!2d-87.6540153673747!3d41.84849450109007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c646b6873d9%3A0x8c900e8c0e004931!2zSGFwcHkgTGFtYiBIb3QgUG90LCBDaGljYWdvIOW_q-S5kOWwj-e-ig!5e0!3m2!1sen!2sus!4v1615425702336!5m2!1sen!2sus",
     },
     { 
